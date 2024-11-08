@@ -4,20 +4,21 @@
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
+[bg storage=road.jpg time=500]
+ 
 
-「走るか寝るかするメロス」[l][r]
+「町の平和」[l][r]
 
-メロスは激怒した。[l][r]
+今日も良い天気だな。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+僕は町の平和を守っている自称ヒーローだ。[l][r]
 
-(中略)[l][r]
+さあ今日も元気にやっていこう！[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+あれはなんだ！？[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_sleep] →選択肢1 [endlink][r]
+[link target=*tag_run] →選択肢2 [endlink][r]
 [s]
 
 *tag_sleep
