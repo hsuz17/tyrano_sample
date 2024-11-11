@@ -1,28 +1,26 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[position width=2000 height=165 top=550 left=0]
+[title name="町の平和"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 [bg storage=road.jpg time=500]
-[position width=2000 height=200 top=500 left=0]
 
-「町の平和」[l][r]
+「町の平和」[p]
 
 今日も良い天気だな。[l][r]
 
 僕は町の平和を守っている自称ヒーローだ。[l][r]
 
-さあ今日も元気にやっていこう！[l][r]
+さあ今日も元気にやっていこう！[p]
 
 あれはなんだ！？[l][r]
 
 道端に謎の物体が落ちている。[l][r]
 
-どうするべきかなぁ。[l][r]
-
-[link target=*tag_1] →持って帰る。 [endlink][r]
-[link target=*tag_2] →ごみ箱に捨てる。 [endlink][r]
+[glink x="500" y="200" width="300" text="持って帰る" target="*tag_1" color="white"]
+[glink x="500" y="300" width="300" text="放置する" target="*tag_2" color="white"]
 [s]
 
 *tag_1
@@ -31,37 +29,48 @@
 
 [bg storage=room.jpg time=500]
 
-勢いで持って帰ってきちゃったけどこれはいったいなんだ？。[l][r]
-勇者は、ひどく赤面した。[r]
+なんとなく持って帰ってきちゃったけどこれはいったいなんだ？[l][r]
 
-[link target=*tag_3] →開けてみる [endlink][r]
-[link target=*tag_4] → [endlink][r]
+人通りの少ない道だから落とし物って感じでもないし。[l][r]
+
+そもそも、こんなもの見たことないぞ。[p]
+
+なんか不吉な感じがするな...[l][r]
+
+[glink x="500" y="200" width="300" text="壊してみる" target="*tag_3" color="white"]
+[glink x="500" y="300" width="300" text="大事に保管する" target="*tag_2" color="white"]
 [s]
-
-【 BAD END 】[l][cm]
-
 
 
 *tag_2
 
-[bg storage=run.jpg time=500]
+[bg storage=fire.jpg time=500]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+どうやらあれは宇宙人が地球に侵略するための目印だったようだ。[l][r]
 
-【 GOOD END 】[l][cm]
+壊しておかなかったことで、予定通り侵略をしてきた。[p]
+
+町は瞬く間に火の海と化し、平和だった人々の生活は失われた。[r]
+
+【 BAD END 】[l][cm]
 
 [jump target=*start]
 
 *tag_3
 
+ガン！！[quake count=1 time=300][p]
 
+やけに固い物体だったが、何とか壊せた。[l][r]
 
-[jump target=*start]
+特に中に何も入っていたわけではなかった。[p]
 
-*tag_4
+いったい何だったんだこれは。[p]
 
+まあいっか。[l][r]
 
+何事もない平和な日々が続くだけだ。[r]
+
+【 GOOD END 】[l][cm]
 
 [jump target=*start]
